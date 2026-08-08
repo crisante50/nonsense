@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>nonsense</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Crect x='6' y='22' width='20' height='3' fill='%23fff'/%3E%3C/svg%3E">
 <style>
   :root{
     --void:#000000;
@@ -51,11 +52,11 @@
 
   .hint{
     position:fixed;left:50%;bottom:26px;z-index:5;transform:translateX(-50%);
-    display:flex;flex-direction:column;align-items:center;gap:11px;
-    font-size:9px;letter-spacing:.5em;text-transform:uppercase;font-weight:300;
-    color:var(--dim);text-indent:.5em;pointer-events:none;
+    display:flex;flex-direction:column;align-items:center;gap:13px;
+    font-size:12px;letter-spacing:.5em;text-transform:uppercase;font-weight:400;
+    color:rgba(233,229,236,.60);text-indent:.5em;pointer-events:none;
   }
-  .hint .line{position:relative;width:1px;height:46px;background:rgba(233,229,236,.10);overflow:hidden}
+  .hint .line{position:relative;width:1px;height:56px;background:rgba(233,229,236,.14);overflow:hidden}
   .hint .line::after{
     content:"";position:absolute;inset:0;
     background:linear-gradient(180deg,transparent,rgba(233,229,236,.85),transparent);
@@ -115,7 +116,7 @@
 
   .track{height:400vh;height:400svh;position:relative;z-index:0}
 
-  @media (max-width:520px){ .hint{bottom:20px} .hint .line{height:34px} }
+  @media (max-width:520px){ .hint{bottom:22px;font-size:15px;color:rgba(233,229,236,.68)} .hint .line{height:50px} }
   @media (prefers-reduced-motion:reduce){ .hint .line::after{animation:none;opacity:.4} }
 </style>
 </head>
